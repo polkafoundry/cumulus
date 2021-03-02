@@ -201,7 +201,7 @@ decl_module! {
 					relay_chain_state
 				)
 				.map_err(|err| {
-					log::trace::print!("invalid relay chain merkle proof: {:?}", err);
+					log::error!("invalid relay chain merkle proof: {:?}", err);
 					Error::<T>::InvalidRelayChainMerkleProof
 				})?;
 
