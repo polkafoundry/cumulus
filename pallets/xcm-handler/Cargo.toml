@@ -18,6 +18,7 @@ xcm = { git = "https://github.com/paritytech/polkadot", default-features = false
 
 # Cumulus Dependencies
 cumulus-primitives-core = { path = "../../primitives/core", default-features = false }
+log = { version = "0.4.14", default-features = false }
 
 [features]
 default = [ "std" ]
@@ -27,5 +28,6 @@ std = [
 	"frame-support/std",
 	"frame-system/std",
 	"cumulus-primitives-core/std",
-	"xcm/std"
+	"xcm/std",
+	"log/std"
 ]
