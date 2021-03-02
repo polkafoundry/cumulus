@@ -49,6 +49,7 @@ sc-executor = { git = "https://github.com/paritytech/substrate", branch = "maste
 sp-consensus = { git = "https://github.com/paritytech/substrate", branch = "master" }
 cumulus-test-client = { path = "../../test/client" }
 env_logger = "0.7.1"
+log = { version = "0.4.14", default-features = false }
 
 [features]
 default = [ "std" ]
@@ -72,4 +73,5 @@ std = [
 	"cumulus-primitives-core/std",
 	"cumulus-primitives-parachain-inherent/std",
 	"environmental/std",
+	"log/std",
 ]
